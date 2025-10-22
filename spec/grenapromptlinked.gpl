@@ -1,0 +1,19 @@
+# grenapromptlinked.gpl — Spécification canonique (v1)
+
+LANG GrenapromptLinked V1
+
+SECTION TOKENS:
+  INTENTION  ::= text
+  EMOTION    ::= valence('calme'|'neutre'|'tendu'|'joyeux'|'grave'|'colère'|'triste') intensity(0.0..1.0) tint(text?)
+  GLYPHE     ::= glyphes(<ID>+)
+  FLUX       ::= route(<N> -> <M>)
+
+SECTION MESSAGE:
+  PROMPT ::= INTENTION ; EMOTION ; GLYPHE ; FLUX ;
+
+SECTION SEMANTICS:
+  ENERGY_FLUX Φ(t) = Σ( forme_i × onde_i × accent_i )
+  DELTA ΔΦ = Φ_b - Φ_a = Σ( flux_GL (x -> y) )
+
+SECTION PIPELINE:
+  PIPE ::= [INTENTION] → [ÉMOTION] → [GLYPHE] → EXÉCUTION

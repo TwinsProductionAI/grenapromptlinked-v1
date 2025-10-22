@@ -1,0 +1,13 @@
+# protocol.glg — Back-End Cognitif (GL_G)
+
+API GrenapromptLinked {
+  IN  PROMPT.gpl
+  OUT EXEC_STATE.glg
+
+  RULE EXECUTION:
+    read [INTENTION]
+    modulate by [ÉMOTION.valence, ÉMOTION.intensity, ÉMOTION.tint]
+    resolve [GLYPHE.glyphes]
+    route via [FLUX.route]
+    emit EXEC_STATE { vectors, energy_flux, priority }
+}

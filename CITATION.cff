@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Si vous utilisez GrenapromptLinked v1, citez ce travail."
+title: "GrenapromptLinked v1 — Langage natif (GL/GPL)"
+authors:
+  - family-names: "Flériag"
+    given-names: "Xavier"
+    affiliation: "Twins Productions — Research Division"
+date-released: "2025-10-22"
+version: "0.1.1"
+license: "MIT"

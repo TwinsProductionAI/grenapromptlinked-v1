@@ -1,0 +1,6 @@
+# ex_kael_exec.glg
+STATE {
+  vectors: ⟨KA|Σ|∏|λ⟩
+  energy_flux: Φ(5→9) = +Δ
+  priority: MEDIUM_PLUS
+}

@@ -1,0 +1,5 @@
+# ex_kael_fr.gpl
+INTENTION: "Kael active son bras runique"
+ÉMOTION: valence("calme") intensity(0.62) tint("bleu_or")
+GLYPHE: glyphes(KA, Σ, ∏, λ)
+FLUX: route(5 -> 9)

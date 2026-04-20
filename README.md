@@ -1,19 +1,54 @@
-# GrenapromptLinked v1 — Langage natif (GL/GPL)
+# grenaprompt-linked
 
-**Repo GL-ONLY.** Aucun code Python.  
-Langage de référence : **GrenapromptLinked (.gpl)** + **Gibberlink (.glg)**.
+Language specification, white paper, and examples for GrenapromptLinked, GL, GPL, and GL_G semantic transport.
 
-- White Paper (PDF) : `whitepaper/WHITE_PAPER_GRENAPROMPTLINKED_v1_Sciences_DeepDive.pdf`
-- Spécification GL : `spec/grenapromptlinked.gpl`
-- Protocole backend cognitif : `api/protocol.glg`
-- Exemples : `examples/*.gpl` (FR) et `examples/*.glg` (glyphes)
+This repository is the language/protocol layer of the public ORA Core map. It is intentionally separate from the runtime and from the main ORA Core OS architecture repository.
+
+## Repository Role
+
+Read this when you want to understand the symbolic transport layer behind ORA Core outputs and module wiring.
+
+| Public order | Repository role |
+| ---: | --- |
+| 5 | GL/GPL/GL_G language and protocol repository. |
+
+Recommended public slug: `grenaprompt-linked`.
+
+## Scope
+
+- GrenapromptLinked (`.gpl`) reference material
+- Gibberlink / GL_G (`.glg`) reference material
+- white paper material
+- protocol examples
+- symbolic backend vocabulary for ORA-style semantic routing
+
+## Main Files
+
+- White paper PDF: `whitepaper/WHITE_PAPER_GRENAPROMPTLINKED_v1_Sciences_DeepDive.pdf`
+- GL specification: `spec/grenapromptlinked.gpl`
+- Backend cognitive protocol: `api/protocol.glg`
+- Examples: `examples/*.gpl` and `examples/*.glg`
 
 ## Pipeline
-```
-[INTENTION] → [ÉMOTION] → [GLYPHE] → EXÉCUTION
+
+```text
+[INTENTION] -> [EMOTION] -> [GLYPH] -> EXECUTION
 ```
 
-## HALO_ORA.v3
-Ratio : **0,01835 Wh/token**. Sorties suggérées : tokens, Wh, kWh, CO₂ (g), durée (s).
+## Design Boundary
 
-© Twins Productions 2025 — MIT.
+This is a language/protocol repository. It should not become the runtime, the RAG layer, or the main ORA Core OS architecture repository.
+
+Related repositories:
+
+- [ora-core-os](https://github.com/TwinsProductionAI/Coeur_ORA_GrenaPrompt_repo): main architecture and install order.
+- [ora-core-runtime](https://github.com/TwinsProductionAI/ora-core-runtime): runnable runtime and tests.
+- [ora-core-specs](https://github.com/TwinsProductionAI/ora-core-specs): technical specifications and white papers.
+
+## HALO Note
+
+This repository may include HALO_ORA.v3 vocabulary and energy-ratio examples. Treat those values as protocol/specification material unless a linked audit explicitly provides current runtime measurements.
+
+## License
+
+Copyright Twins Productions 2025. See repository license files for reuse terms.

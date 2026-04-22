@@ -41,7 +41,7 @@ This is a language/protocol repository. It should not become the runtime, the RA
 
 Related repositories:
 
-- [ora-core-os](https://github.com/TwinsProductionAI/Coeur_ORA_GrenaPrompt_repo): main architecture and install order.
+- [ora-core-os](https://github.com/TwinsProductionAI/ora-core-os): main architecture and install order.
 - [ora-core-runtime](https://github.com/TwinsProductionAI/ora-core-runtime): runnable runtime and tests.
 - [ora-core-specs](https://github.com/TwinsProductionAI/ora-core-specs): technical specifications and white papers.
 
